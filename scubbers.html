@@ -4,7 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="Scubbers" content="iOS & Android application that support divers through their entire diving journey.">
+  <!-- Browser instructions to set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Scubbers</title>
+  <!-- For reseting browsing default CSS, and applying own CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- For making Google font Inter usable in CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,10 +31,10 @@
 
   <!-- For the main section -->
   <main>
-    <div class="">
+    <div id=project>
 
       <!-- For project overview -->
-      <div class="">
+      <div>
         <h1>Scubbers</h1>
         <picture>
           <source srcset="img/scubbers/600x400/01-scubbers-project-overview-600x400.jpg" media="(max-width:767px)">
@@ -35,23 +44,23 @@
       </div>
 
       <!-- For project steps -->
-      <div class="">
+      <div>
         <h2>Design process</h2>
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/02-scubbers-design-process-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/02-scubbers-design-process-1200x800.jpg" alt="Scubbers design process">
         </picture>
-        <h3>Overview</h3>
+        <h3>Approach</h3>
         <p>The project was conducted in 3 phases. I initially focused on understanding the existing solutions and the market opportunity. Being myself a professional diver, I already had a good idea of the needs of divers, and therefore I could
           quickly come up with a clear problem statement and a MVP scope. Based on that, I defined the main user flows, wireframes, and visual direction. I ended up with a prototype I could validate with other scuba divers successfully.</p>
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/03-scubbers-diving-enthusiasts-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/03-scubbers-diving-enthusiasts-1200x800.jpg" alt="Diving enthusiasts">
@@ -62,7 +71,7 @@
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/04-scubbers-user-flow-diagram-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/04-scubbers-user-flow-diagram-1200x800.jpg" alt="User flow diagram">
@@ -73,7 +82,7 @@
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/05-scubbers-style-guide-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/05-scubbers-style-guide-1200x800.jpg" alt="Style guide">
@@ -85,7 +94,7 @@
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/06-scubbers-dark-mode-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/06-scubbers-dark-mode-1200x800.jpg" alt="Dark mode">
@@ -96,7 +105,7 @@
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/07-scubbers-android-version-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/07-scubbers-android-version-1200x800.jpg" alt="Android version">
@@ -107,7 +116,7 @@
       </div>
 
       <!-- For project step # -->
-      <div class="">
+      <div>
         <picture>
           <source srcset="img/scubbers/600x400/08-scubbers-prototype-600x400.jpg" media="(max-width:767px)">
           <img src="img/scubbers/1200x800/08-scubbers-prototype-1200x800.jpg" alt="Prototype">
@@ -121,7 +130,7 @@
       </div>
 
       <!-- For conclusion -->
-      <div class="">
+      <div>
         <h2>Conclusion</h2>
         <p>After 1.5 month of hard work, I was proud of the application I designed. “Scubbers” really meets the goals set at the beginning of the project, and stands out versus the existing solutions available on the market. Through this process, I
           could also learn a lot about native mobile design, and reinforce my UX and UI skills.</p>
@@ -132,16 +141,16 @@
 
   <!-- For the footer  -->
   <footer id=contact>
-    <div class="">
+    <div>
       <h2>Get in touch</h2>
       <p>Do you like what I do? Let's talk together.</p>
       <!-- For Call To Actions -->
-      <div class="">
-        <a href="tel:+351925953802">Phone me</a>
-        <a href="mailto:contactguillaumeberthet@gmail.com?subject=Contact through website">Email me</a>
+      <div>
+        <a class="button-secondary" href="mailto:contactguillaumeberthet@gmail.com?subject=Contact through website">Email me</a>
+        <a class="button-tertiary" href="tel:+351925953802">Phone me</a>
       </div>
       <!-- For social networks -->
-      <div class="">
+      <div>
         <ul>
           <li><a href="https://www.linkedin.com/in/guillaumeberthet/" target="_blank">
               <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

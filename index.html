@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <meta name="Guillaume Berthet, UX/UI Designer"
     content="After +10 years leading digital products, I now entirely focus on what I have enjoyed the most in my career: designing impactful experiences. Bringing the best of the business and the design world together.">
+  <!-- Browser instructions to set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guillaume Berthet</title>
+  <!-- For reseting browsing default CSS, and applying own CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- For making Google font Inter usable in CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,17 +32,22 @@
 
   <!-- For the main section -->
   <main>
-    <div class="">
-      <!-- For the hero section -->
+
+    <!-- For the hero section -->
+    <div id=hero>
       <h1>Hi, I am Guillaume<br><span>Product manager turned UX/UI designer.</span></h1>
       <p>After +10 years leading digital products, I now entirely focus on what I have enjoyed the most in my career: designing impactful experiences. Bringing the best of the business and the design world together.</p>
-      <!-- For my projects -->
+    </div>
+
+    <!-- For my projects -->
+    <div id=projects>
       <h2>Recent work</h2>
+
       <!-- For project #1: Scubbers -->
-      <div class="">
+      <div>
 
         <!-- For left colunn -->
-        <div class="">
+        <div>
           <picture>
             <source srcset="img/scubbers/600x400/01-scubbers-project-overview-600x400.jpg" media="(max-width:767px)">
             <img src="img/scubbers/1200x800/01-scubbers-project-overview-1200x800.jpg" alt="Scubbers project overview">
@@ -41,19 +55,19 @@
         </div>
 
         <!-- For right colunn -->
-        <div class="">
+        <div>
           <h3>Scubbers</h3>
           <p>iOS & Android application that support divers through their entire diving journey.</p>
-          <a href="scubbers.html">View project</a>
+          <a class="button-primary" href="scubbers.html">View project</a>
         </div>
 
       </div>
 
       <!-- For project #2: Sábado -->
-      <div class="">
+      <div>
 
         <!-- For left colunn -->
-        <div class="">
+        <div>
           <picture>
             <source srcset="img/sabado/600x400/01-sabado-project-overview-600x400.jpg" media="(max-width:767px)">
             <img src="img/sabado/1200x800/01-sabado-project-overview-1200x800.jpg" alt="S&aacute;bado project overview">
@@ -61,19 +75,19 @@
         </div>
 
         <!-- For right colunn -->
-        <div class="">
+        <div>
           <h3>S&aacute;bado</h3>
           <p>Casual beachwear ecommerce website for modern men who like spending good time at the beach. Made in Portugal.</p>
-          <a href="#">View project</a>
+          <a class="button-primary" href="#">View project</a>
         </div>
 
       </div>
 
       <!-- For project #3: Carrots & Peas -->
-      <div class="">
+      <div>
 
         <!-- For left colunn -->
-        <div class="">
+        <div>
           <picture>
             <source srcset="img/carrots-and-peas/600x400/01-carrots-and-peas-project-overview-600x400.jpg" media="(max-width:767px)">
             <img src="img/carrots-and-peas/1200x800/01-carrots-and-peas-project-overview-1200x800.jpg" alt="Carrots & Peas project overview">
@@ -81,27 +95,29 @@
         </div>
 
         <!-- For right colunn -->
-        <div class="">
+        <div>
           <h3>Carrots & Peas</h3>
           <p>Responsive website that helps vegetarians in cooking original, simple, and healthy recipes.</p>
-          <a href="#">View project</a>
+          <a class="button-primary" href="#">View project</a>
         </div>
 
       </div>
+      
     </div>
   </main>
+
   <!-- For the footer  -->
   <footer id=contact>
-    <div class="">
+    <div>
       <h2>Get in touch</h2>
       <p>Do you like what I do? Let's talk together.</p>
       <!-- For Call To Actions -->
-      <div class="">
-        <a href="tel:+351925953802">Phone me</a>
-        <a href="mailto:contactguillaumeberthet@gmail.com?subject=Contact through website">Email me</a>
+      <div>
+        <a class="button-secondary" href="mailto:contactguillaumeberthet@gmail.com?subject=Contact through website">Email me</a>
+        <a class="button-tertiary" href="tel:+351925953802">Phone me</a>
       </div>
       <!-- For social networks -->
-      <div class="">
+      <div>
         <ul>
           <li><a href="https://www.linkedin.com/in/guillaumeberthet/" target="_blank">
               <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
