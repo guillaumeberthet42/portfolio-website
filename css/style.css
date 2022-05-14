@@ -159,7 +159,9 @@ main {
   /* Centers text */
 }
 
-#hero {
+#hero,
+#about,
+#projects {
   padding: 10px 0;
   display: inline-block;
   width: 100%;
