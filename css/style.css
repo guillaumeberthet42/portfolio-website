@@ -5,13 +5,13 @@ neutral black #40514e
 primary blue #2F89fc
 secondary green #30e3cA
 */
+* {
+  box-sizing: border-box;
+}
+
 /* Sets a smooth scroll behavior for the contact anchor */
 html {
   scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -78,8 +78,9 @@ a:active {
   text-decoration: none;
   color: #f5f5f5;
   font-weight: 700;
-  padding: 10px;
-  border-radius: 3px;
+  margin: 4px 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
   transition: 0.2s opacity;
 }
 
@@ -98,8 +99,9 @@ a:active {
   text-decoration: none;
   color: #f5f5f5;
   font-weight: 700;
-  padding: 10px;
-  border-radius: 3px;
+  margin: 4px 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
   transition: 0.2s opacity;
   border: 2px solid #f5f5f5;
   /* width of the border, type, color */
@@ -121,8 +123,9 @@ a:active {
   background-color: transparent;
   color: #f5f5f5;
   font-weight: 700;
-  padding: 10px;
-  border-radius: 3px;
+  margin: 4px 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
   transition: 0.2s opacity;
 }
 
@@ -135,7 +138,7 @@ a:active {
 }
 
 .social {
-  fill: #f5f5f5;
+  color: #f5f5f5;
 }
 
 /* Layout styling */
@@ -144,14 +147,14 @@ main {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-  padding-bottom: 25px;
+  margin: 24px 0;
+  /* 24px top and bottom, 0 left and right */
+  padding-bottom: 48px;
 }
 
 #hero h1 {
@@ -162,20 +165,24 @@ main {
 #hero,
 #about,
 #projects {
-  padding: 10px 0;
+  padding-top: 8px;
   display: inline-block;
   width: 100%;
 }
 
 .logo {
   max-width: 250px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #40514e;
+  text-decoration: none;
 }
 
 header {
   background-color: #30e3cA;
   text-align: center;
-  padding-top: 10px;
-  box-shadow: 0px 3px 5px 0px rgba(64, 81, 78, 0.75);
+  padding-top: 16px;
+  box-shadow: 0px 2px 4px 0px rgba(64, 81, 78, 0.75);
   position: fixed;
   width: 100%;
 }
@@ -192,15 +199,19 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
+  padding: 0 16px;
   font-weight: 700;
   color: #40514e;
   text-decoration: none;
 }
 
-#social-networks, #contact-cta {
-  text-align: center;
+#contact-cta {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#social-networks {
+  padding-top: 44px;
 }
 
 #social-networks>ul {
@@ -210,12 +221,13 @@ nav>ul>li>a {
   width: 100%;
 }
 
-#social-networks>ul li {
+#social-networks>ul>li {
   display: inline-block;
 }
 
 #social-networks>ul>li>a {
-  padding: 0 15px;
+  padding: 0 20px;
+  color: #f5f5f5;
 }
 
 footer {
