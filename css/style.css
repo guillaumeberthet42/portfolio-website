@@ -144,7 +144,7 @@ a:active {
 
 /* Layout styling */
 main {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .container {
@@ -176,37 +176,64 @@ main {
 
 header {
   background-color: #30e3cA;
-  text-align: center;
-  padding-top: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   box-shadow: 0px 2px 4px 0px rgba(64, 81, 78, 0.75);
   position: fixed;
   width: 100%;
 }
 
 header .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #40514e;
   text-decoration: none;
+  font-size: 20px;
+}
+
+nav {
+padding-bottom: 0px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
   padding: 0 16px;
-  font-weight: 700;
+  font-weight: 600;
   color: #40514e;
   text-decoration: none;
+}
+
+
+.navtoggle.responsive nav {
+  padding: 20px 0 0;
+  margin-bottom: -28px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 20px 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
 
 #contact-cta {
@@ -237,7 +264,6 @@ nav>ul>li>a {
 .download-resume {
   padding-top: 16px;
 }
-
 
 /* CSS animation start */
 .berlin-illustration {
@@ -301,6 +327,7 @@ nav>ul>li>a {
 }
 
 /* CSS animation end */
+
 footer {
   text-align: center;
   padding: 40px;
@@ -317,19 +344,38 @@ Medium devices (640px and larger)
   }
 
   header .logo {
+    max-width: 250px;
     display: block;
     margin-top: 16px;
     margin-bottom: -48px;
+    min-width: 641px;
   }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+    padding-bottom: 0;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   main {
-    padding-top: 98px;
+    padding-top: 116px;
   }
 
   body {
