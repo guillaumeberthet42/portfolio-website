@@ -411,7 +411,20 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  .navtoggle.responsive nav{
+  padding: 0px 0 0;
+  margin-bottom: 0px; (this is the margin bottom -28px you added)
+  }
 
+  .navtoggle.responsive li {
+  padding: 0px 0;
+  }
+
+  .container2 {
+  padding-right: 0px;
+
+  }
+  
   }
 
 
@@ -435,7 +448,6 @@ Large devices (1024px or larger)
     .col-lg-12 {
       width: 100%;
     }
-
 
   }
 
