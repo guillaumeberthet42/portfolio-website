@@ -196,7 +196,7 @@ header {
   background-color: #30e3ca;
   padding-top: 24px;
   padding-bottom: 24px;
-  box-shadow: 0px 2px 4px 0 rgba(64, 81, 78, 0.75);
+  box-shadow: 0px 2px 4px 0px rgba(64, 81, 78, 0.75);
   position: fixed;
   width: 100%;
 }
